@@ -1,0 +1,262 @@
+
+/* color palette: #E4572E (flame), #29335C (space cadet), #F3A712 (marigold), #A8C686 (olive), #669BBC (air superiority blue) */
+
+
+body {
+/* background-color: #669BBC; */
+background: linear-gradient(#a8d3ee, #29335C);
+font-family: 'Libre Baskerville', sans-serif;
+
+}
+
+::selection {
+    background-color: #F3A712;
+}
+
+#container {
+width: 100%;
+padding-top: 160px;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#header {
+    /* background-color: #F3A712; */
+    background: linear-gradient(#F3A712, #f37712);
+    color: #555;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 3px 3px #E4572E;
+    transition: all .3s ease-in-out;
+
+}
+
+#header:hover {
+    box-shadow: 5px 3px 3px #b64320;
+    
+}
+
+#header__nav {
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Train One', cursive;
+    font-size: 1.4em;
+    
+    
+
+}
+
+ #header__nav > a {
+     background-color: #E4572E;
+     color: #ccc;
+     padding: 5px 10px;
+     border-radius: 5px;
+     transition: all .4s ease-in-out;
+ }
+
+#header__nav > a:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 3px 3px black;
+}
+h1 {
+    font-size: 3em;
+    font-variant-caps: small-caps;
+    text-align: center;
+    letter-spacing: 8px;
+    transition: all .4s ease-in-out;
+}
+
+h1:hover {
+    letter-spacing: -5px;
+}
+
+strong {
+    font-size: 0.5em;
+    font-variant: normal;
+    letter-spacing: normal;
+}
+
+.theatre__section {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin: 0px;
+   
+}
+
+
+
+.theatre__box {
+    padding: 10px;
+    margin: 6px;
+    width: 350px;
+    margin-bottom: 20px;
+    border: 5px double #8ca56e;
+    transition: all .5s ease-in-out;
+}
+
+.theatre__box--ldn {
+    background-color: #A8C686;
+}
+
+.theatre__box--nyc {
+    background-color: #739948;
+}
+
+.theatre__box:hover {
+    transform: scale(1.08);
+}
+
+
+.theatre__name {
+    color: #903013;
+    background-color: #e4b4a6;
+    font-family: 'Codystar', cursive;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    box-shadow: 5px 3px 3px black;
+    transition: all .4s ease-in-out;
+}
+
+.theatre__name:hover {
+    background-color: #903013;
+    color: #e4b4a6;
+}
+
+/* .theatre__image {
+    width: 100%;
+    filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+    transition: all .3s ease-in-out;
+    border-radius: 20px;
+    box-shadow: 5px 3px 3px black;
+    margin-bottom: 20px;
+
+} */
+
+.theatre__image--background {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+    transition: all .3s ease-in-out;
+    border-radius: 20px;
+    box-shadow: 5px 3px 3px black;
+    margin-bottom: 20px;
+}
+
+.theatre__image--background:hover {
+    filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+}
+
+
+
+/* 
+.theatre__image:hover {
+    filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+} */
+
+
+
+
+.theatre__capacity {
+    width: 160px;
+    position: relative;
+    background-color: #29335C;
+    top: 30px;
+    left: 180px;
+    z-index: 1;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px 0;
+
+}
+
+.theatre__description {
+    border-top: 1px solid #E4572E;
+    padding: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* #footer__background {
+    padding-top: 300px;
+    background-image: url(../images/londonbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.25;
+    
+}
+ */
+
+ .theatre__notableproductions__title {
+     text-align: center;
+     font-variant-caps:small-caps;
+     margin: 0.5em auto 0.5em auto;
+     background: linear-gradient(#669BBC, #396f91);
+     transition: all 0.5s ease-in-out;
+     width: 80%;
+     padding: 8px 2px;
+     border-top-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+
+
+ }
+
+
+ .theatre__notableproductions__title:hover {
+     background: linear-gradient(#396f91, #669BBC);
+     border-top-right-radius: 15px;
+     border-bottom-left-radius: 15px;
+     border-top-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+     color: #fff;
+
+}
+
+ li {
+     line-height: 1.5;
+     font-size: 1.5em;
+     font-family: 'Satisfy', cursive;
+     text-shadow: 1px 1px 1px #fff;
+     margin: 0 1.5em;
+     padding: 0.5em 0;
+     transition: all .4s ease-in-out;
+
+ }
+
+ li:hover {
+     color: white;
+     text-shadow: 1px 1px 1px #000;
+ }
